@@ -6,5 +6,13 @@ const shout = (word) => {
     return word.toUpperCase();
 }
 
-module.exports = {echo: echo, shout: shout};
-// , repeat: repeat, startOfWord: startOfWord, firstWord: firstWord
+const repeat = (word, num) => {
+    let newWord = word;
+    for (i=1; i<num; i++) {
+        newWord += ' ' + word
+    }
+    return newWord;
+}
+
+module.exports = {echo: echo, shout: shout, repeat: repeat};
+// , startOfWord: startOfWord, firstWord: firstWord

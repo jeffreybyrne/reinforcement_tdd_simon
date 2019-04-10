@@ -14,5 +14,12 @@ const repeat = (word, num) => {
     return newWord;
 }
 
-module.exports = {echo: echo, shout: shout, repeat: repeat};
-// , startOfWord: startOfWord, firstWord: firstWord
+const startOfWord = (word, num) => {
+    return word.substring(0,num);
+}
+
+const firstWord = (word) => {
+    spacePlace = word.indexOf(' ');
+    return word.substring(0,spacePlace);
+}
+module.exports = {echo: echo, shout: shout, repeat: repeat, startOfWord: startOfWord, firstWord: firstWord};
